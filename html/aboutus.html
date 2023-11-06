@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+          * {
+            box-sizing: border-box;
+        }
+        .row::after {
+            clear:both;
+            content:"";
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float:left;
+            padding:5px;
+        }  
+        
+        /*Mobile phone*/
+        [class*="col-"] {
+            width:100%;
+         }
+           /*Desktop*/
+           @media screen and (min-width:768px){
+            .col-1 {width:8.33%;}
+            .col-2 {width:16.66%;}
+            .col-3 {width:25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+         }
+         .col-3 {
+            text-align: center;
+         }
+         .row {
+            margin-bottom: 20px;
+         }
+        body {
+            background-color: rgb(255, 213, 159);
+        }
+        .navigation-bar {
+           background-color:rgb(161, 109, 71);
+           height: 55px;
+           line-height: 55px;
+
+        }
+        .navigation-bar > a {
+            margin-left: 30px;
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            
+        }
+        a {
+            text-align: center;
+        }
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:rgb(138, 90, 0);
+        }   
+        p {
+            font-size: 20px;
+            text-align: center;
+            color:rgb(138, 90, 0);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+            form {
+                background-color: rgb(255, 255, 255);
+                padding: 30px;
+                border-radius:20px ;
+                width: 400px;
+                height: 350px;
+                margin: auto;
+                padding: 25px;
+                
+                
+            }
+            img {
+                width: 200px;
+                height: 200px;
+                border-top-right-radius: 40px;
+            }
+            p {
+                font-size: 15px;
+                text-align: center;
+                color:rgb(138, 90, 0);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            div {
+                padding: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div class="navigation-bar">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Payment</a>
+        <a href="#">Reviews</a>
+    </div>
+    <h1>What is our website about?</h1>
+    <p>Our website is an online shopping website for arts and crafts. Our website is mainly targeted towards children, especially children who love to do arts and crafts. We sell scissors, pom poms, colour papers, etc. Our website is made for parents who are too busy to go buy the equipment from stores and shops, mainly because they don't want their little toddlers out of their sight. This website is also a great place to order equipment for daycares in kindergartens. </p>
+       <div class="row" style="display:flex;justify-content: center;">
+        <div class="col-10">
+            <div class="row">
+                <div class="col-3">
+                    <div>
+                        <form class="zppt">
+                            <img src="Image/zinpopothant.png">
+                            <p>My name is Zin Po Po Thant. I am a proud 14 years old Year-8 Morado student. I always found the  of coding very interesting.</p>
+                        </form>
+                    </div>
+                    <div>
+                        <form class="zppt" style="height: 450px;">
+                            <img src="Image/zinphyuphyuthant.png">
+                            <p>My name is Zin Phyu Phyu Thant. I’m 14 years old. I’m from Year-8 Morado. Learning how to code was not so fun because of all the different types of codes to remember. It was hard for me at first, but I started learning to code more and more web-pages. Coding isn’t that hard for me now, but I still prefer Science over ICT.</p>
+                        </form>
+                    </div> 
+                    <div>
+                        <form class="spo" style="height: 450px;">
+                            <img src="Image/shwepoeou.jpeg">
+                            <p></p>
+                        </form>
+                    </div> 
+                    <div>   
+                        <form class="hs" style="height: 450px;">
+                            <img src="Image/htetshin.png">
+                            <p></p>
+                        </form>
+                    </div> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer style="text-align: center; background-color: ghostwhite;">
+        <hr>
+        <p>Copyright 2023-2024</p>
+    </footer>
+</body>
+</html>

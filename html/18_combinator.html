@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Combinators</title>
+    <style>
+        /*Descendant selector, space*/
+        div p {
+            background-color: darkkhaki;
+
+        }
+        /*child selector, > */
+        div > p {
+            color: brown;
+        }
+        /*Adjacent Sibling selector, + */
+        div + p {
+            font-size: 30px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: darksalmon;
+        }
+        /*General Sibling selector, ~ */
+        div ~ p {
+            background-color: cyan;
+            font-style: oblique;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph 1</p>
+    <div>
+        <h3>Heading 1</h3>
+        <p>Paragraph 1 in Div</p>     
+        <p>Paragraph 2 in Div</p>
+        <section>
+            <p>Paragraph 3 in Div</p>
+        </section>
+    </div>
+    <h3>Heading 2</h3>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+</body>
+</html>

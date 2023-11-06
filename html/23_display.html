@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+    <style>
+        nav {
+            background-color: darkgray;
+            line-height: 55px;
+            display: flex;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 12px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: black;  
+            padding: 10px 25px;
+            font-size: 20px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            
+        }
+        li {
+            display: inline;
+        }
+        span {
+            background-color: coral;
+            font: 20px;
+        }
+        .div1 {
+            background-color: coral;
+            border: 1px solid black;
+            display:inline-block;
+            padding:5px 10px;
+            width:100px;
+            height:100px;
+        }
+        img {
+            width: 250px;
+            height: 220px;
+            display:block;
+            margin: auto;
+        }
+        .div2 .p1 {
+            display: none;
+            background-color: cadetblue;
+        }
+        .div2:hover .p1 {
+            display: block;
+        }
+        .img1 {
+            display:none;
+        }
+        #checkbox:checked ~ .img1 {
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: aquamarine;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width:768px){
+        nav ul li {
+            display: block;
+            text-align: center;
+        }
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .logo img {
+            max-height: 50px;
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--block-->
+    <nav>
+        <ul>
+            <div class="logo">
+                <img class="logo" src="Image/PINKWHIT.GIF">
+            </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Review</a></li>
+        </ul>   
+    </nav>
+    <p>Hello World <span>Morado Campus</span></p>
+    <p>Hello World Morado Campus</p>
+
+    <br><br>
+    <div class="div1">Item1</div>
+    <div class="div1">Item2</div>
+    <div class="div1">Item3</div>
+    <br><br>
+    <!--inline-->
+    <img src="Image/tulips.jpg" alt="tulips">
+    <img src="Image/download.jpg" alt="sky" style="display: none;">
+    <p>CSS Display Properties</p>
+
+    <!--hover-->
+    <div class="div2">
+        Hover Me.
+        <p class="p1">Hey, It's me!</p>
+    </div>
+    <br><br>
+    <!--clicked-->
+    <input id="checkbox" type="checkbox" name="clickme" value="clickme">
+    <label>Click Me</label>
+    <img class="img1" src="Image/download.jpg" alt="sky">
+
+</body>
+</html>

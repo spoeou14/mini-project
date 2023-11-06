@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        form {
+            background-color: yellowgreen;
+            padding: 30px;
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 350px;
+            height: 750px;
+            margin: auto;
+            }
+    </style>
+</head>
+<body>
+    <form>
+        <!--Data List-->
+        <input list="name_type">
+        <datalist id="name-type">
+            <option value="Mr.">Mr.</option>
+            <option value="Ms.">Ms.</option>
+            <option value="Mrs.">Mrs.</option>
+        </datalist><br>
+        <!--Input element--><br>
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" value="Holly" name="firstname"><br><br>
+        <label>Last Name: </label><br>
+        <input type="text" value="Crystal" name="lname"><br><br>
+        <label>Password</label><br>
+        <input type="password" name="password"><br><br>
+        <input type="email" name="email" placeholder="email"><br>
+        <input type="button" value="Submit">
+        <input type="button" value="Click me">
+        <input type="button" value="Next">
+        <input type="button" value="Reset">    
+        <br><br>
+
+        <!--radio buttons-->
+        <label>Gender</label>
+        <br><br>
+        <input id="Male" type="radio" value="Male" name="Gender">
+        <label for="Male">Male</label>
+        <br><br>
+        <input id="Female" type="radio" value="Female" name="Gender">
+        <label for="Female">Female</label>
+        <br><br>
+        <input id="Other" type="radio" value="Other" name="Gender">
+        <label for="Other">Other</label>
+        
+        <!--Check box-->
+        <br><br>
+        <label>Education level</label><br>
+        <input id="be" type="checkbox" value="be" name="edu">
+        <label>BE</label>
+        <input id="me" type="checkbox" value="be" name="edu">
+        <label>ME</label>
+        <input id="phd" type="checkbox" value="be" name="edu">
+        <label>PhD</label>
+
+        <!--Dropdown List-->
+        <br><br>
+        <label>Date of Birth</label><br>
+        <select name="dob" size="3" style="width:100px ;" multiple>
+            <option value="1">26</option>
+            <option value="2">27</option>
+            <option value="3">28</option>
+        </select>
+        <select name="dob" style="width: 100px ;  height:20px;">
+            <option value="june">June</option>
+            <option value="july">July</option>
+            <option value="aug">August</option>
+        </select>
+        <select name="dob" style="width:100px ; height:20px;">
+            <option value="08">2008</option>
+            <option value="09">2009</option>
+            <option value="10">2010</option>
+        </select><br><br>
+        
+        <!--Textarea-->
+        <label>Description</label><br>
+        <textarea name="des" rows="7" col="15"></textarea>
+
+        <!--submit button-->
+        <br><br>
+        <input type="button" value="Submit">
+        <button type="reset">Reset</button>
+        <button type="button"><a href="web_assignment.html">Go now</a></button>
+        <button type="button" onclick="alert('Hello world!')">Click Here</button>
+    </form>
+</body>
+</html>
+    
+    

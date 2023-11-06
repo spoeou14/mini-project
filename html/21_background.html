@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background</title>
+    <style>
+        /*
+        body {
+            background-color: lightgreen;
+            background-image: url("Image/tulips.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+        */
+        body {
+            background:url(Image/gradient.jfif) repeat-x fixed;
+        }
+        .div1 {
+            width: 70%;
+            height: 300px;
+            border: 1px solid black;
+            text-align: center;
+            font-size: 22px;
+            background: url(Image/PINKWHIT.GIF) repeat;
+            background-size: 120px;
+            margin: auto;
+        }        
+        .div2 {
+            width: 70%;
+            height: 300px;
+            border: 1px solid black;           
+            margin: auto;
+            background: url("Image/tree3.jfif") no-repeat right bottom, url("Image/texture.gif") repeat ;
+            background-size: 100px, auto;
+        }
+        .div3 {
+            width:200px;
+            height:150px;
+            border:1px solid black;
+            background: url("Image/tree3.jfif") no-repeat;
+            background-size: cover;
+        }
+        .div4 {
+            width:200px;
+            height:150px;
+            border:1px solid black;
+            background: url("Image/tree3.jfif") no-repeat;
+            background-size: contain;
+        }
+        .div5 {
+            width: 70%;
+            height: 300px;
+            border: 7px solid black;           
+            margin: auto;
+            padding: 30px;
+            background: rgb(170, 170, 255) url("Image/tree3.jfif") no-repeat;
+            background-origin: content-box;
+        }
+        .div6 {
+            width: 70%;
+            height: 300px;
+            border: 7px dotted black;           
+            margin: auto;
+            padding: 30px;
+           background-color: yellow;
+           background-clip: content-box;
+        }
+        .background {
+            width:70%;
+            border:1px solid black;
+            margin:auto;
+            background: url("Image/tulips.jpg");
+            background-size: contain;
+        }
+        .background .transbox {
+            background-color: rgba(220, 255, 138, 0.4);
+            padding: 20px;
+            margin: 20px;
+        }
+        .transbox p {
+            font-size: 20px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>My heading</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor officiis voluptatem aspernatur quam ratione minima laudantium minus modi sit rerum! Consectetur dignissimos sapiente provident quod, repudiandae aperiam distinctio tenetur autem.</p>
+
+    <div class="div1">
+        Container<br>       
+    </div>
+    <br><br>
+    <div class="div2">
+        <h2>Multiple backgrounds</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus ea, eaque accusantium velit laudantium necessitatibus esse minus, sapiente sequi obcaecati atque dolorum ipsum tempore? Debitis quaerat dolor delectus ut nostrum.</p>
+    </div>
+    <br><br>
+    <div class="div3">
+        <p>background size: cover</p>
+    </div>
+    <br><br>
+    <div class="div4">
+        <p>background size: contain</p>
+    </div>
+    <br><br>
+    <div class="div5">
+        <h3>Background origin</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, numquam. Ipsa voluptate alias accusantium voluptatum nisi quaerat, facere dolore porro, exercitationem vel fugiat harum dolorum eligendi vitae delectus quo inventore!</p>
+    </div>
+    <br><br>
+    <div class="div6">
+        <h3>Background Clip</h3>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, numquam. Ipsa voluptate alias accusantium voluptatum nisi quaerat, facere dolore porro, exercitationem vel fugiat harum dolorum eligendi vitae delectus quo inventore!</p>
+    </div>
+    <br><br>
+    <div class="background">
+        <div class="transbox">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit eveniet temporibus doloremque sint omnis non? Deserunt quasi, pariatur, blanditiis facilis a architecto tenetur doloribus, maiores incidunt minus laborum vero.</p>
+        </div>
+    </div>
+</body>
+</html>

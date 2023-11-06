@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Container</title>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            margin: 20px 30px;
+            padding: 30px;
+            justify-content: center;
+           
+        }
+        .flex-container > .item1 {
+            flex-basis: 40%;
+        }
+        .flex-container > .item2 {
+            flex-basis: 60%;
+        }
+        .item1 {
+            text-align: center;
+        }
+        .item1 img {
+            border-radius: 10px;
+        }
+        body {
+            background-color: fuchsia;
+        }
+        @media screen and (min-width:768px){
+            body {
+                background-color: aquamarine;
+                font-size: 20px;
+                color: darkcyan;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        }
+        .box {
+            background-color: gold;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:600px){
+            .box {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">
+            <img src="Image/cloud.jpg" alt="cloud" width="300px" height="230px">
+        </div>
+        <div class="item2">
+            <h3>Beautiful clouds</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium ipsa, ipsum tempore unde eum sequi? Sequi id voluptate ipsa similique minima, sunt reprehenderit. Illo, inventore voluptatibus natus corrupti tempora veritatis.</p>
+        </div>
+    </div>
+
+    <div class="box">Hi, it is me.</div>
+</body>
+</html>

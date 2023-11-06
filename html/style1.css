@@ -1,0 +1,25 @@
+h2 {
+    color:darkmagenta;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    color:darkslateblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 3px solid greenyellow;
+}
+body{
+    background-color: darkkhaki;
+}
+img{
+    margin-left: 35%;
+}
+div {
+    background-color: bisque;
+}
+span{
+    border: 3px dashed yellow;
+}

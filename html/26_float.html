@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float</title>
+    <style>
+        .img1 {
+            float: right;
+        }
+        .div1 {
+            background-color: bisque;
+        }
+        .div2 {
+            background-color: chartreuse;
+        }
+        .div3 {
+            background-color: blueviolet;
+        }
+        .container {
+            clear:right;
+            margin-bottom: 40px;
+        }
+        .container > div {
+            float:right;
+            padding: 20px;
+        }
+        .box {
+            border:1px solid black;
+            clear:both;
+            overflow: auto;
+        }
+        .box > .img2 {
+            float:left;
+        }
+    </style>
+</head>
+<body>
+   <p>
+        <img class="img1" src="Image/texture.pin.jpg" alt="texture" width="100px" height="100px">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nisi quam hic odit laborum itaque blanditiis animi iste. Necessitatibus, dolores. Dolores harum minus ducimus, quia alias natus deleniti reprehenderit atque.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nam maxime obcaecati fugiat doloribus autem consectetur molestias voluptatum, quam dicta animi itaque asperiores. Quam suscipit facilis rem beatae modi impedit.
+    </p> 
+
+    <div class="container">
+        <div class="div1">Home</div>
+        <div class="div2">About</div>
+        <div class="div3">Contact</div>
+    </div>
+    <br><br><br>
+    <div class="box">
+        <img class="img2" src="Image/nightview.art.jpg" alt="texture" width="250px" height="200px">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum temporibus esse, fugiat magnam non excepturi adipisci quisquam,</p>
+    </div>
+</body>
+</html>

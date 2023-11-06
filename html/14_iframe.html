@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Iframe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        iframe  {
+            width: 100%;
+            height: 350px;
+            border: none;
+            padding-left: 100px;
+            padding-right: 100px;
+            margin-top: 50px;
+         }
+         body {
+            background-color: aquamarine;
+         } 
+         .video1  {
+            background-color: cornflowerblue;
+            text-align: center;
+         }  
+         video {
+            width: 350px;
+            height: 300px;
+         } 
+         .video2 {
+            margin:auto;
+            background-color: cornsilk;
+            width: 50%;
+         }         
+    </style>
+</head>
+<body>
+        <!--Iframe-->
+        <iframe src="13_bookmark.html" title="bookmark"></iframe>
+
+        <!--Youtube video-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WZvewdjLZ3A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <!--video center in div-->
+        <div class="video1">
+            <h3>Adding video</h3>
+            <video controls>
+                <source src="Image/bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <!--Div center-->
+        <div class="video2">
+            <h3>Adding video</h3>
+            <video controls style="width: 100%;">
+                <source src="Image/bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+        <audio controls>
+            <source src="Image/wai la.mp3" type="audio/mp3">
+        </audio>
+</body>
+</html>

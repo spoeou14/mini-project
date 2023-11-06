@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        fieldset {
+            width: 20%;
+            background-color: cadetblue;
+            margin: auto;
+            padding: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        input {
+            width:250px;
+            height:25px;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        button {
+            width: 80px;
+            height: 25px;
+            font-size: 14px;
+            border-radius: 5px;
+            background-color:cornflowerblue;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 1px solid black;
+        }
+        legend {
+            background-color: antiquewhite;
+            font-size: 17px;
+            padding: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;    
+        }
+    </style>
+</head>
+<body style="background-color: gainsboro;">
+    <form method="post">
+        <fieldset>
+            <legend>Login Info</legend>
+            <!--Input elements-->
+         <input type="text" value="" name="username" placeholder="Username" required><br><br>
+         <input type="password" value="" name="password" placeholder="Password"><br><br>
+         <input type="email" value="" name="email" placeholder="Email"><br><br>
+         <button type="submit">Login</button>
+        </fieldset>
+    </form>
+</body>
+</html>

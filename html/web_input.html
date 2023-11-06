@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input types</title>
+    <style>
+        fieldset {
+            width: 20%;
+            background-color: cadetblue;
+            margin: auto;
+            padding: 50px;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        input {
+            width:250px;
+            height:25px;
+            border-radius: 7px;
+            padding: 5px;
+        }
+        button {
+            width: 80px;
+            height: 25px;
+            font-size: 14px;
+            border-radius: 5px;
+            background-color:cornflowerblue;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border: 1px solid black;
+        }
+        legend {
+            background-color: antiquewhite;
+            font-size: 17px;
+            padding: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;    
+        }
+    </style>
+</head>
+<body style="background-color: gainsboro;">
+    <form method="post">
+        <fieldset>
+            <legend>Login Info</legend>
+            <!--Input elements-->
+         <input type="text" value="" name="username" placeholder="Username" required><br><br>
+         <input type="password" value="" name="password" placeholder="Password"><br><br>
+         <input type="email" value="" name="email" placeholder="Email"><br><br>
+
+         <label>Select your favourite color</label>
+         <input type="color" value="" name="color" placeholder="Color"><br><br>
+
+         <label>When is your birthday?</label>
+         <input type="date" value="" name="date" placeholder="Date" style="font-size: large;"><br><br>
+
+         <label>You can share your file here</label>
+         <input type="file" value="" name="file" placeholder="File" style="font-size: 15px;"><br><br>
+
+         <label>She is doing her homework</label>
+         <input src="img_prsetation.jpg" style="height: 150px; width: 250px;" type="image" value="" name="image" placeholder="Image"><br><br>
+         
+         <input type="month" value="" name="month" placeholder="Month" style="font-size: large;"><br><br>
+         <input type="number" value="" name="number" placeholder="Number" style="font-size: large;"><br><br>
+         <input type="radio" value="" name="radio" placeholder="Radio"><br><br>
+         <input type="range" value="" name="range" placeholder="Range"><br><br>
+         <input type="reset" value="Reset" name="reset" placeholder="Reset"><br><br>
+         <input type="search" value="" name="search" placeholder="Search" style="height: 35px; width: 264px;"><br><br>
+         <input type="tel" value="" name="tel" placeholder="Tel"><br><br>
+         <input type="time" value="" name="time" placeholder="Time"><br><br>
+         <button type="submit">Login</button>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        .div1 {
+            position: sticky;
+            top:0;
+        }
+        .div2 {
+            position: relative;
+            top:100px;
+            left:50px;
+            background-color: aquamarine;
+        }
+        .div3 {
+            position: relative;
+            top:200px;
+            border: 3px solid black;
+            width: 300px;
+            height: 300px;
+        }
+        .div4 {
+            width: 100px;
+            height: 100px;
+            border:1px solid black;
+            position: absolute;
+            bottom: 80px;
+            left:20px;
+        }
+        .div5 {
+            position: fixed;
+            bottom:0;
+            right:0;
+            background-color:aquamarine;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <br><br><br>
+    <div class="div1">
+        <h2>Position-Sticky</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi, quam nam repellendus doloremque ea praesentium molestias consectetur ut accusantium cum, minima dignissimos? Fugiat temporibus ducimus veniam, harum consequatur totam.</p>
+    </div>
+    <div class="div2">
+        <h2>Position-Relative</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur nisi, quam nam repellendus doloremque ea praesentium molestias consectetur ut accusantium cum, minima dignissimos? Fugiat temporibus ducimus veniam, harum consequatur totam.</p>
+    </div>
+    <div class="div3">
+        <h2>Position-Relative</h2>
+        <div class="div4">
+            <h2>Position-Absolute</h2>
+        </div>
+    </div>
+    <div class="div5">
+        <p>Position Fixed</p>
+    </div>
+</body>
+</html>
